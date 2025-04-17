@@ -1,8 +1,7 @@
 
 
 <section>
-    <h1>$Title</h1>
-    <% loop $Children %>
+    <% loop $getEvents %>
         <article >
             <h2><a href="$Link">$Title</a></h2>
             <p><strong>Datum:</strong> $EventDate.Nice</p>

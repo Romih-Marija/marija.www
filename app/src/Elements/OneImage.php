@@ -35,7 +35,6 @@ class OneImage extends BaseElement
 
         // Dodamo novo zavihek s sliko
         $fields->addFieldToTab('Root.Main', UploadField::create('Image', 'Upload an image'));
-        $fields->removeByName('ImageType');
 
         // Dodamo Dropdown za izbiro vrste slike
         $fields->addFieldToTab('Root.Main', DropdownField::create(
@@ -63,7 +62,10 @@ class OneImage extends BaseElement
     return '(No image)';
 }
 
-
+public function getImageTypeClass()
+{
+    return $this->ImageType ?: 'vecjaSlika';
+}
     public function getType()
     {
         return 'One Image';

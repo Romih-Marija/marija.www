@@ -1,6 +1,6 @@
 <% if $Image %>
-    <div class="inner">
-        <img src="$Image.Link" alt="$Image.Title" />
+    <div class="container center-container">
+        <img class="$ImageTypeClass" src="$Image.Link" alt="$Image.Title" />
     </div>
 <% else %>
     <p>No image uploaded.</p>
