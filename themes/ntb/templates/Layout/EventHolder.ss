@@ -1,11 +1,7 @@
-
-
-<section>
-    <% loop $getEvents %>
-        <article >
-            <h2><a href="$Link">$Title</a></h2>
-            <p><strong>Datum:</strong> $EventDate.Nice</p>
-            <p><strong>Lokacija:</strong> $Location</p>
-        </article>
+<% if $Events %>
+    <% loop $Events %>
+        <p>$Title</p>
     <% end_loop %>
-</section>
+<% else %>
+    <p>Ni dogodkov za prikaz.</p>
+<% end_if %>
