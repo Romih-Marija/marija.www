@@ -31,7 +31,6 @@
             "web.config"
         ],
         "expose": [
-            "app/client",
             "themes/ntb/css",
             "themes/ntb/images",
             "themes/ntb/javascript"
