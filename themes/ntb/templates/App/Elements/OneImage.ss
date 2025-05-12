@@ -1,5 +1,5 @@
 <% if $Image %>
-    <div class="container center-container">
+    <div class="center-container">
         <img class="$ImageTypeClass" src="$Image.Link" alt="$Image.Title" />
     </div>
 <% else %>

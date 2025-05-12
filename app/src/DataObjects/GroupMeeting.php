@@ -24,5 +24,14 @@ class GroupMeeting extends DataObject
         'DateTimeInfo' => 'Datum in čas',
     ];
 
+    public function getCMSFields()
+    {
+        $fields = parent::getCMSFields();
+
+        $fields->removeByName('SortOrder');
+
+        return $fields;
+    }
+
     private static $default_sort = 'SortOrder ASC';
 }

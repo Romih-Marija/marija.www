@@ -1,4 +1,4 @@
-<div class="container">
+<div>
   <div class="pcenter">
     <p class="kontakt">
       <br /> nabesedo@gmail.com

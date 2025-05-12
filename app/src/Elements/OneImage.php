@@ -21,13 +21,8 @@ class OneImage extends BaseElement
         'Image',
     ];
     private static $db = [
-        'ImageType' => "Enum('vecjaSlika,vecjaVisokaSlika,slika2', 'vecjaSlika')", // Enum za izbiro vrste slike
+        'ImageType' => "Enum('vecjaSlika,vecjaVisokaSlika,slika2,brez', 'vecjaSlika')", // Enum za izbiro vrste slike
     ];
-
-      private static $summary_fields = [
-        'Thumbnail' => 'Image',
-    ];
-
 
     public function getCMSFields()
     {
@@ -44,6 +39,7 @@ class OneImage extends BaseElement
                 'vecjaSlika' => 'Večja široka slika',
                 'vecjaVisokaSlika' => 'Večja visoka slika',
                 'slika2' => 'Manjša visoka slika',
+                'brez' => '/',
             ]
         )->setEmptyString('-- Izberi vrsto slike --'));
 
@@ -54,18 +50,11 @@ class OneImage extends BaseElement
     {
         return $this->Image()->exists() ? $this->Image()->Title : 'No image selected';
     }
-    public function getThumbnail()
-{
-    if ($this->Image()->exists()) {
-        return $this->Image()->ScaleWidth(100)->CMSThumbnail(); // ali ->URL
-    }
-    return '(No image)';
-}
 
-public function getImageTypeClass()
-{
-    return $this->ImageType ?: 'vecjaSlika';
-}
+    public function getImageTypeClass()
+    {
+        return $this->ImageType ?: 'vecjaSlika';
+    }
     public function getType()
     {
         return 'One Image';

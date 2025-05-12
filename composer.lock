@@ -4,8 +4,75 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "16e2158bc00a7465868a6df48e9b6b10",
+    "content-hash": "5dad55db164ae965caf77ed23993e344",
     "packages": [
+        {
+            "name": "colymba/gridfield-bulk-editing-tools",
+            "version": "4.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripe/silverstripe-gridfield-bulk-editing-tools.git",
+                "reference": "c6a654fb0fe7bbd18a2746399b901b613d17950c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-gridfield-bulk-editing-tools/zipball/c6a654fb0fe7bbd18a2746399b901b613d17950c",
+                "reference": "c6a654fb0fe7bbd18a2746399b901b613d17950c",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/asset-admin": "^2",
+                "silverstripe/framework": "^5"
+            },
+            "require-dev": {
+                "phpstan/extension-installer": "^1.3",
+                "silverstripe/standards": "^1"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "expose": [
+                    "client/dist",
+                    "client/lang"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "Colymba\\BulkTools\\": "src/BulkTools/",
+                    "Colymba\\BulkUpload\\": "src/BulkUploader/",
+                    "Colymba\\BulkManager\\": "src/BulkManager/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Thierry Francois",
+                    "homepage": "http://t-f.io"
+                },
+                {
+                    "name": "SilverStripe",
+                    "homepage": "http://silverstripe.com"
+                },
+                {
+                    "name": "The SilverStripe Community",
+                    "homepage": "http://silverstripe.org"
+                }
+            ],
+            "description": "Silverstripe CMS GridField component to upload images/files and edit records in bulk",
+            "keywords": [
+                "Image upload",
+                "bulk upload",
+                "gridfield bulk upload",
+                "silverstripe"
+            ],
+            "support": {
+                "issues": "https://github.com/silverstripe/silverstripe-gridfield-bulk-editing-tools/issues",
+                "source": "https://github.com/silverstripe/silverstripe-gridfield-bulk-editing-tools/tree/4.1.2"
+            },
+            "time": "2025-02-16T20:40:24+00:00"
+        },
         {
             "name": "composer/ca-bundle",
             "version": "1.5.6",
@@ -441,185 +508,6 @@
             "time": "2024-02-05T11:56:58+00:00"
         },
         {
-            "name": "dynamic/silverstripe-elemental-baseobject",
-            "version": "5.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/dynamic/silverstripe-elemental-baseobject.git",
-                "reference": "b6ce33e7cbe882560e218dd38c2d14c64b2c2e9d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/dynamic/silverstripe-elemental-baseobject/zipball/b6ce33e7cbe882560e218dd38c2d14c64b2c2e9d",
-                "reference": "b6ce33e7cbe882560e218dd38c2d14c64b2c2e9d",
-                "shasum": ""
-            },
-            "require": {
-                "dnadesign/silverstripe-elemental": "^5",
-                "silvershop/silverstripe-hasonefield": "^4",
-                "silverstripe/linkfield": "^4.0",
-                "unclecheese/display-logic": "^3"
-            },
-            "require-dev": {
-                "silverstripe/frameworktest": "^1",
-                "silverstripe/recipe-testing": "^3"
-            },
-            "type": "silverstripe-vendormodule",
-            "autoload": {
-                "psr-4": {
-                    "Dynamic\\BaseObject\\": "src/",
-                    "Dynamic\\BaseObject\\Tests\\": "tests/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Dynamic",
-                    "email": "dev@dynamicagency.com",
-                    "homepage": "https://www.dynamicagency.com"
-                }
-            ],
-            "description": "A simple base DataObject to use with Elemental Content Blocks",
-            "keywords": [
-                "blocks",
-                "content",
-                "elemental",
-                "silverstripe"
-            ],
-            "support": {
-                "issues": "https://github.com/dynamic/silverstripe-elemental-baseobject/issues",
-                "source": "https://github.com/dynamic/silverstripe-elemental-baseobject/tree/5.0.0"
-            },
-            "time": "2025-01-24T20:51:43+00:00"
-        },
-        {
-            "name": "dynamic/silverstripe-elemental-gallery",
-            "version": "5.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/dynamic/silverstripe-elemental-gallery.git",
-                "reference": "ef09b6ec83c72098e2f5c3ac388effe1871c8a49"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/dynamic/silverstripe-elemental-gallery/zipball/ef09b6ec83c72098e2f5c3ac388effe1871c8a49",
-                "reference": "ef09b6ec83c72098e2f5c3ac388effe1871c8a49",
-                "shasum": ""
-            },
-            "require": {
-                "dnadesign/silverstripe-elemental": "^5",
-                "dynamic/silverstripe-elemental-baseobject": "^5"
-            },
-            "require-dev": {
-                "silverstripe/recipe-testing": "^3"
-            },
-            "suggest": {
-                "colymba/gridfield-bulk-editing-tools": "Bulk upload images to a gallery."
-            },
-            "type": "silverstripe-vendormodule",
-            "extra": {
-                "expose": [
-                    "thirdparty"
-                ],
-                "branch-alias": {
-                    "dev-master": "5.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Dynamic\\Elements\\Gallery\\": "src/",
-                    "Dynamic\\Elements\\Gallery\\Tests\\": "tests/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Dynamic",
-                    "email": "dev@dynamicagency.com",
-                    "homepage": "https://www.dynamicagency.com"
-                }
-            ],
-            "description": "A block to display a collection of images",
-            "keywords": [
-                "blocks",
-                "content",
-                "elemental",
-                "gallery",
-                "image",
-                "photo",
-                "silverstripe"
-            ],
-            "support": {
-                "issues": "https://github.com/dynamic/silverstripe-elemental-gallery/issues",
-                "source": "https://github.com/dynamic/silverstripe-elemental-gallery/tree/5.0.0"
-            },
-            "time": "2024-08-14T00:35:08+00:00"
-        },
-        {
-            "name": "dynamic/silverstripe-elemental-image",
-            "version": "3.0.0-alpha1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/dynamic/silverstripe-elemental-image.git",
-                "reference": "419b5e8c95d97773c1cc21d7d31e1d25c3ea8b49"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/dynamic/silverstripe-elemental-image/zipball/419b5e8c95d97773c1cc21d7d31e1d25c3ea8b49",
-                "reference": "419b5e8c95d97773c1cc21d7d31e1d25c3ea8b49",
-                "shasum": ""
-            },
-            "require": {
-                "dnadesign/silverstripe-elemental": "^5",
-                "silverstripe/framework": "^5"
-            },
-            "require-dev": {
-                "silverstripe/recipe-testing": "^3"
-            },
-            "type": "silverstripe-vendormodule",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Dynamic\\Elements\\Image\\": "src/",
-                    "Dynamic\\Elements\\Image\\Tests\\": "tests/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Dynamic",
-                    "email": "dev@dynamicagency.com",
-                    "homepage": "https://www.dynamicagency.com"
-                }
-            ],
-            "description": "A block to add a single image to your page.",
-            "keywords": [
-                "blocks",
-                "content",
-                "elemental",
-                "image",
-                "silverstripe"
-            ],
-            "support": {
-                "issues": "https://github.com/dynamic/silverstripe-elemental-image/issues",
-                "source": "https://github.com/dynamic/silverstripe-elemental-image/tree/3.0.0-alpha1"
-            },
-            "time": "2023-06-27T03:41:44+00:00"
-        },
-        {
             "name": "egulias/email-validator",
             "version": "4.0.4",
             "source": {
@@ -774,6 +662,53 @@
                 }
             ],
             "time": "2025-01-02T16:53:09+00:00"
+        },
+        {
+            "name": "evanshunt/lumberjack-sort-and-summary",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/evanshunt/lumberjack-sort-and-summary.git",
+                "reference": "2705efbf8d5b7c2a3a143c099588eb25e9dedaa5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/evanshunt/lumberjack-sort-and-summary/zipball/2705efbf8d5b7c2a3a143c099588eb25e9dedaa5",
+                "reference": "2705efbf8d5b7c2a3a143c099588eb25e9dedaa5",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/cms": "^5",
+                "silverstripe/framework": "^5",
+                "silverstripe/lumberjack": "^3"
+            },
+            "type": "silverstripe-vendormodule",
+            "autoload": {
+                "psr-4": {
+                    "EvansHunt\\LumberjackSortAndSummary\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Toews",
+                    "email": "davejtoews@gmail.com"
+                }
+            ],
+            "description": "Uses $summary_fields, $default_sort, and $plural_name for LumberJack when only one class is allowed for children",
+            "homepage": "http://github.com/evanshunt/lumberjack-sort-and-summary",
+            "keywords": [
+                "lumberjack",
+                "silverstripe"
+            ],
+            "support": {
+                "issues": "http://github.com/evanshunt/lumberjack-sort-and-summary/issues",
+                "source": "https://github.com/evanshunt/lumberjack-sort-and-summary/tree/v2.0.0"
+            },
+            "time": "2024-02-02T17:54:34+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -2494,55 +2429,6 @@
             "time": "2024-03-02T06:30:58+00:00"
         },
         {
-            "name": "silvershop/silverstripe-hasonefield",
-            "version": "4.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/silvershop/silverstripe-hasonefield.git",
-                "reference": "ac9184afc05378773347d06866e8b129aea2c9bf"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/silvershop/silverstripe-hasonefield/zipball/ac9184afc05378773347d06866e8b129aea2c9bf",
-                "reference": "ac9184afc05378773347d06866e8b129aea2c9bf",
-                "shasum": ""
-            },
-            "require": {
-                "silverstripe/framework": "^4.0 || ^5.0",
-                "silverstripe/vendor-plugin": "^1.0 || ^2.0"
-            },
-            "replace": {
-                "hchokshi/silverstripe-hasonefield": "*"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^5.7"
-            },
-            "type": "silverstripe-vendormodule",
-            "extra": {
-                "expose": [
-                    "client"
-                ],
-                "branch-alias": {
-                    "dev-main": "4.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "SilverShop\\HasOneField\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-2-Clause"
-            ],
-            "description": "Edit a has_one relationship using a GridField, triggered by clicking a button.",
-            "support": {
-                "issues": "https://github.com/silvershop/silverstripe-hasonefield/issues",
-                "source": "https://github.com/silvershop/silverstripe-hasonefield/tree/4.0.1"
-            },
-            "time": "2023-08-30T04:02:14+00:00"
-        },
-        {
             "name": "silverstripe-themes/simple",
             "version": "3.3.2",
             "source": {
@@ -2974,112 +2860,6 @@
             "time": "2024-06-17T00:39:35+00:00"
         },
         {
-            "name": "silverstripe/elemental-bannerblock",
-            "version": "3.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/silverstripe/silverstripe-elemental-bannerblock.git",
-                "reference": "a1b8851522315a1b385181b8f12eaaff1800f98a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-elemental-bannerblock/zipball/a1b8851522315a1b385181b8f12eaaff1800f98a",
-                "reference": "a1b8851522315a1b385181b8f12eaaff1800f98a",
-                "shasum": ""
-            },
-            "require": {
-                "dnadesign/silverstripe-elemental": "^5.0.0-alpha2",
-                "php": "^8.1",
-                "silverstripe/admin": "^2",
-                "silverstripe/cms": "^5",
-                "silverstripe/elemental-fileblock": "^3",
-                "silverstripe/framework": "^5",
-                "silverstripe/vendor-plugin": "^2"
-            },
-            "require-dev": {
-                "phpstan/extension-installer": "^1.3",
-                "phpunit/phpunit": "^9.6",
-                "silverstripe/standards": "^1",
-                "squizlabs/php_codesniffer": "^3"
-            },
-            "type": "silverstripe-vendormodule",
-            "extra": {
-                "expose": [
-                    "client/dist"
-                ]
-            },
-            "autoload": {
-                "psr-4": {
-                    "SilverStripe\\ElementalBannerBlock\\": "src/",
-                    "SilverStripe\\ElementalBannerBlock\\Tests\\": "tests/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "description": "A banner block for the silverstripe-elemental module",
-            "keywords": [
-                "Content Blocks",
-                "elemental",
-                "silverstripe"
-            ],
-            "support": {
-                "issues": "https://github.com/silverstripe/silverstripe-elemental-bannerblock/issues",
-                "source": "https://github.com/silverstripe/silverstripe-elemental-bannerblock/tree/3.3.0"
-            },
-            "time": "2024-09-01T23:29:21+00:00"
-        },
-        {
-            "name": "silverstripe/elemental-fileblock",
-            "version": "3.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/silverstripe/silverstripe-elemental-fileblock.git",
-                "reference": "127895eb01c969ae63c739fa0e1efceebef88817"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-elemental-fileblock/zipball/127895eb01c969ae63c739fa0e1efceebef88817",
-                "reference": "127895eb01c969ae63c739fa0e1efceebef88817",
-                "shasum": ""
-            },
-            "require": {
-                "dnadesign/silverstripe-elemental": "^5",
-                "php": "^8.1",
-                "silverstripe/assets": "^2",
-                "silverstripe/cms": "^5",
-                "silverstripe/framework": "^5",
-                "silverstripe/vendor-plugin": "^2"
-            },
-            "require-dev": {
-                "silverstripe/recipe-testing": "^3"
-            },
-            "type": "silverstripe-vendormodule",
-            "autoload": {
-                "psr-4": {
-                    "SilverStripe\\ElementalFileBlock\\": "src/",
-                    "SilverStripe\\ElementalFileBlock\\Tests\\": "tests/",
-                    "SilverStripe\\ElementalFileBlock\\Tests\\Behat\\Context\\": "tests/behat/src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "description": "A file block for the silverstripe-elemental module",
-            "keywords": [
-                "Content Blocks",
-                "elemental",
-                "silverstripe"
-            ],
-            "support": {
-                "issues": "https://github.com/silverstripe/silverstripe-elemental-fileblock/issues",
-                "source": "https://github.com/silverstripe/silverstripe-elemental-fileblock/tree/3.1.0"
-            },
-            "time": "2023-08-29T23:20:22+00:00"
-        },
-        {
             "name": "silverstripe/errorpage",
             "version": "2.3.1",
             "source": {
@@ -3376,70 +3156,6 @@
                 "source": "https://github.com/silverstripe/silverstripe-graphql/tree/5.2.4"
             },
             "time": "2025-01-29T02:41:12+00:00"
-        },
-        {
-            "name": "silverstripe/linkfield",
-            "version": "4.1.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/silverstripe/silverstripe-linkfield.git",
-                "reference": "45f12df18a2f719866de7b3957fe1371ae97829b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-linkfield/zipball/45f12df18a2f719866de7b3957fe1371ae97829b",
-                "reference": "45f12df18a2f719866de7b3957fe1371ae97829b",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^8.1",
-                "silverstripe/admin": "^2.2",
-                "silverstripe/cms": "^5",
-                "silverstripe/framework": "^5.3",
-                "silverstripe/versioned": "^2"
-            },
-            "require-dev": {
-                "dnadesign/silverstripe-elemental": "^5",
-                "phpstan/extension-installer": "^1.3",
-                "silverstripe/documentation-lint": "^1",
-                "silverstripe/frameworktest": "^1",
-                "silverstripe/recipe-testing": "^3",
-                "silverstripe/standards": "^1",
-                "squizlabs/php_codesniffer": "^3"
-            },
-            "type": "silverstripe-vendormodule",
-            "extra": {
-                "expose": [
-                    "client/dist",
-                    "client/lang"
-                ]
-            },
-            "autoload": {
-                "psr-4": {
-                    "SilverStripe\\LinkField\\": "src/",
-                    "SilverStripe\\LinkField\\Tests\\": "tests/php/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Silverstripe",
-                    "homepage": "https://silverstripe.com"
-                },
-                {
-                    "name": "The Silverstripe Community",
-                    "homepage": "https://silverstripe.org"
-                }
-            ],
-            "description": "Link management for Silverstripe CMS",
-            "support": {
-                "issues": "https://github.com/silverstripe/silverstripe-linkfield/issues",
-                "source": "https://github.com/silverstripe/silverstripe-linkfield/tree/4.1.2"
-            },
-            "time": "2025-04-08T02:18:36+00:00"
         },
         {
             "name": "silverstripe/login-forms",
@@ -6195,70 +5911,6 @@
             "time": "2020-10-02T23:36:20+00:00"
         },
         {
-            "name": "unclecheese/display-logic",
-            "version": "3.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/unclecheese/silverstripe-display-logic.git",
-                "reference": "4e99cef2c883f24983d19c9bb2e398f4c988f53a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/unclecheese/silverstripe-display-logic/zipball/4e99cef2c883f24983d19c9bb2e398f4c988f53a",
-                "reference": "4e99cef2c883f24983d19c9bb2e398f4c988f53a",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^8.1",
-                "silverstripe/framework": "^5.0"
-            },
-            "replace": {
-                "silverstripe/display-logic": "*"
-            },
-            "require-dev": {
-                "silverstripe/behat-extension": "^5",
-                "silverstripe/recipe-testing": "^3",
-                "silverstripe/serve": "^3"
-            },
-            "type": "silverstripe-vendormodule",
-            "extra": {
-                "expose": [
-                    "client"
-                ],
-                "installer-name": "display-logic"
-            },
-            "autoload": {
-                "psr-4": {
-                    "UncleCheese\\DisplayLogic\\": "src/",
-                    "UncleCheese\\DisplayLogic\\Tests\\": "tests/php/",
-                    "UncleCheese\\DisplayLogic\\Tests\\Behaviour\\": "tests/behat/src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Uncle Cheese",
-                    "email": "unclecheese@leftandmain.com"
-                }
-            ],
-            "description": "Allows assignment of conditions for display and hide of specific form fields based on client side behavior.",
-            "keywords": [
-                "Forms",
-                "cms",
-                "display",
-                "logic",
-                "silverstripe"
-            ],
-            "support": {
-                "issues": "https://github.com/unclecheese/silverstripe-display-logic/issues",
-                "source": "https://github.com/unclecheese/silverstripe-display-logic/tree/3.0.0"
-            },
-            "time": "2023-02-26T18:14:37+00:00"
-        },
-        {
             "name": "undefinedoffset/sortablegridfield",
             "version": "2.2.0",
             "source": {
@@ -6469,16 +6121,16 @@
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.13.0",
+            "version": "1.13.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "024473a478be9df5fdaca2c793f2232fe788e414"
+                "reference": "1720ddd719e16cf0db4eb1c6eca108031636d46c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/024473a478be9df5fdaca2c793f2232fe788e414",
-                "reference": "024473a478be9df5fdaca2c793f2232fe788e414",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/1720ddd719e16cf0db4eb1c6eca108031636d46c",
+                "reference": "1720ddd719e16cf0db4eb1c6eca108031636d46c",
                 "shasum": ""
             },
             "require": {
@@ -6517,7 +6169,7 @@
             ],
             "support": {
                 "issues": "https://github.com/myclabs/DeepCopy/issues",
-                "source": "https://github.com/myclabs/DeepCopy/tree/1.13.0"
+                "source": "https://github.com/myclabs/DeepCopy/tree/1.13.1"
             },
             "funding": [
                 {
@@ -6525,7 +6177,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-02-12T12:17:51+00:00"
+            "time": "2025-04-29T12:36:36+00:00"
         },
         {
             "name": "phar-io/manifest",
@@ -8017,9 +7669,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "dynamic/silverstripe-elemental-image": 15
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],

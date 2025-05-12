@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <% base_tag %>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any" />
     <link
@@ -25,7 +26,7 @@
       rel="stylesheet"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Na tvojo besedo</title>
+  <title><% if $ClassName.ShortName == 'HomePage' %>$SiteConfig.Title<% else %><% if $MetaTitle %>$MetaTitle<% else %>$Title<% end_if %> &vert; $SiteConfig.Title<% end_if %></title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any" />
     <meta
       name="description"
@@ -49,7 +50,9 @@
   </script>
   <body>
     <% include Nav %>
+    <div class="container">
     $Layout
+    </div>
     <% include Footer %>
     <% require javascript('//code.jquery.com/jquery-3.7.1.min.js') %>
     <% require themedJavascript('script') %>

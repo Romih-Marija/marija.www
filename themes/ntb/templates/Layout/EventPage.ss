@@ -1,8 +1,12 @@
 
-<article>
-    <h1>$Title</h1>
-    <p><strong>Datum:</strong> $EventDate.Nice</p>
-    <p><strong>Lokacija:</strong> $Location</p>
- 
+<div class="center-container">
+    <div class="dogodekPage">
+        <h2>$Title</h2>
+        <p>$Location, $DisplayDate</p>
+        <br/>
+        <% if $ElementalArea %>
+            $ElementalArea
+        <% end_if %>
     </div>
-</article>
+</div>
+
