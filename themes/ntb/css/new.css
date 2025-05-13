@@ -100,12 +100,6 @@ body {
 	}
 
 
-    .tekst-block {
-        padding: 20px 20px; /* Doda notranji razmik */
-        max-width: 930px; /* Največja širina elementa */
-        margin: 0 auto; /* Postavi v sredino */
-    }
-
     .oneImage {
         margin: 0 auto;
         max-width: 800px;

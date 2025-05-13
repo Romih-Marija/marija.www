@@ -29,6 +29,11 @@ select:-webkit-autofill:focus {
   padding: 0;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+.tekst-block {
+    padding: 20px 20px; /* Doda notranji razmik */
+    max-width: 900px; /* Največja širina elementa */
+    margin: 0 auto; /* Postavi v sredino */
+}
 .onasTekst {
   padding: 10px 20px;
   max-width: 930px;
@@ -979,6 +984,12 @@ form .p-textarea label {
   margin-top: 20px;
 }
 @media (max-width: 500px) {
+.tekst-block {
+    padding: 20px 5px; /* Doda notranji razmik */
+}
+    .onasTekst {
+  padding: 10px 10px;
+}
   .kontakt {
     font-size: medium;
     text-align: left;
@@ -1055,7 +1066,7 @@ form .p-textarea label {
     width: 300px;
   }
   .slika_container {
-    height: 170px;
+    height: 181px;
   }
   .kristof_img {
     padding-top: 0px;

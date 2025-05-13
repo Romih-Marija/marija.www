@@ -96,18 +96,6 @@ class EventPage extends Page
 
         return null;
     }
-    public function validate()
-    {
-        $result = parent::validate();
-
-        if (!$this->DatumOd || !$this->DatumDo) {
-            $result->addError('Oba datuma (od in do) sta obvezna.');
-        } elseif ($this->DatumDo < $this->DatumOd) {
-            $result->addError('Datum "do" ne more biti pred datumom "od".');
-        }
-        return $result;
-    }
-
     public function getImageTypeClass()
     {
         return $this->ImageType;
