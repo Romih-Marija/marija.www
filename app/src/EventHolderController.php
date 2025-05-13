@@ -20,6 +20,6 @@ class EventHolderController extends PageController
 
         return EventPage::get()
             ->filter('DatumDo:LessThan', $now)
-            ->sort('DatumOd', 'DESC'); // najnovejši pretekli dogodki najprej
+            ->sort('DatumDo', 'DESC'); // najnovejši pretekli dogodki najprej
     }
 }

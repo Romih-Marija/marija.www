@@ -48,7 +48,7 @@ class EventPage extends Page
         'SlikaMajhna.CMSThumbnail' => 'Slika',
     ];
 
-    private static $default_sort = 'DatumOd DESC';
+    private static $default_sort = 'DatumDo DESC';
 
     public function getCMSFields()
     {
