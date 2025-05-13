@@ -18,12 +18,10 @@
         <% end_if %>
         <div class="podlaga2">
             <p class="vec">
-                <a href="">
+                <a href="/dogodki/kateheza-za-mlade">
                     <b>KATEHEZA - 100-TERNA RODOVITNOST</b>
                 </a>
             </p>
-       
-              
             <br />
             <b>Trubarjeva 80 </b>
             <br />
@@ -31,11 +29,10 @@
             <br />
 
             <p class="vecGumb">
-                <a href="">
+                <a href="/dogodki/kateheza-za-mlade">
                     <b>VEČ</b>
                 </a>
             </p>
-          
         </div>
         <div class="podlaga2">
             <p>

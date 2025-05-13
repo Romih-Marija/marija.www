@@ -49,14 +49,14 @@
     gtag("config", "G-5LNB2XWKWQ");
   </script>
   <body>
-    <% include Nav %>
-    <div class="container">
-    $Layout
+    <div class="page-wrapper">
+      <% include Nav %>
+      <div class="container content">
+      $Layout
+      </div>
+      <% include Footer %>
+      <% require javascript('//code.jquery.com/jquery-3.7.1.min.js') %>
+      <% require themedJavascript('script') %>
     </div>
-    <% include Footer %>
-    <% require javascript('//code.jquery.com/jquery-3.7.1.min.js') %>
-    <% require themedJavascript('script') %>
-    
-  
-</body>
+  </body>
 </html>
