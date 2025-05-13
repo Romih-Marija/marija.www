@@ -28,10 +28,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title><% if $ClassName.ShortName == 'HomePage' %>$SiteConfig.Title<% else %><% if $MetaTitle %>$MetaTitle<% else %>$Title<% end_if %> &vert; $SiteConfig.Title<% end_if %></title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any" />
-    <meta
-      name="description"
-      content="Smo občestvo mladih in odraslih, različnih poklicanosti, ki se radi zbiramo ob Božji besedi, se jo učimo poslušati in brati s konkretnostjo svojih življenj ter vsakdadnje življenje brati z Besedo."
-    />
     <% require themedCSS("index") %>
     <% require themedCSS("new") %>
   </head>
