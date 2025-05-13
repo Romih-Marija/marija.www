@@ -2,7 +2,7 @@
     <a href="$Link">
         <div class="slika_container">
         <% if $SlikaMajhna %>
-            <img calss="dogodek_slika" src="$SlikaMajhna.Link" alt="$Title" class="" />
+            <img class="dogodek_slika" src="$SlikaMajhna.Link" alt="$Title" class="" />
         <% end_if %>
         <div class="overlay">
             <p>Preberi več</p>
