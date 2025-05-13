@@ -17,8 +17,6 @@
             $ElementalArea
         <% end_if %>
         <div class="podlaga2">
-            
-            <p class="pcenter">V aprilu kateheze ni! <br/> Premaknjena je na maj, majska pa na junij. </p><br/> 
             <p class="vec">
                 <a href="">
                     <b>KATEHEZA - 100-TERNA RODOVITNOST</b>
