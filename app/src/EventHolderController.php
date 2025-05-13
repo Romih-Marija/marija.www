@@ -11,7 +11,7 @@ class EventHolderController extends PageController
 
         return EventPage::get()
             ->filter('DatumDo:GreaterThanOrEqual', $now)
-            ->sort('DatumOd', 'ASC'); // najbližji dogodki najprej
+            ->sort('DatumDo', 'ASC'); // najbližji dogodki najprej
     }
 
     public function getPastEvents()
