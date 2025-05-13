@@ -11,7 +11,7 @@
     </a>
 
     <p class="ime_dogodka">
-        <a href="$Link">$Title / $ID</a>
+        <a href="$Link">$Title</a>
     </p>
 
     <div class="lokacija_datum">
