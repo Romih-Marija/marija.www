@@ -26,6 +26,7 @@
       rel="stylesheet"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    $MetaTags
   <title><% if $ClassName.ShortName == 'HomePage' %>$SiteConfig.Title<% else %><% if $MetaTitle %>$MetaTitle<% else %>$Title<% end_if %> &vert; $SiteConfig.Title<% end_if %></title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any" />
     <% require themedCSS("index") %>
