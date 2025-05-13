@@ -32,7 +32,6 @@
         ],
         "expose": [
             "themes/ntb/css",
-            "themes/ntb/images",
             "themes/ntb/javascript"
         ]
     },
