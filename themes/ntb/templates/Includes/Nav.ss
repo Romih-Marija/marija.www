@@ -14,7 +14,7 @@
     </div>
 	<div class="logo-mobile">
 	  <a href="$AbsoluteBaseURL">
-		<img src="/assets/logo-nav.png" alt="logo Na tvojo besedo">
+		<img src="/assets/logo-nav.png" alt="Na tvojo Besedo">
 	  </a>
 	</div>
   
