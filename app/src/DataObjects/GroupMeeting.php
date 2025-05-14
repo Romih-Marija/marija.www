@@ -3,8 +3,9 @@ namespace App\DataObjects;
 use SilverStripe\ORM\DataObject;
 use App\Elements\GroupMeetingElement;
 use SilverStripe\Security\Permission;
+use SilverStripe\Security\PermissionProvider;
 
-class GroupMeeting extends DataObject
+class GroupMeeting extends DataObject implements PermissionProvider
 {
     private static $table_name = 'GroupMeeting';
 
@@ -35,14 +36,25 @@ class GroupMeeting extends DataObject
     }
 
     private static $default_sort = 'SortOrder ASC';
-        public function canView($member = null)
+
+    public function providePermissions()
     {
-        return true;
+        return [
+            'EDIT_GROUPMEETING' => [
+                'name' => 'Edit Group Meetings',
+                'category' => 'Group Meetings',
+                'help' => 'Dovoljuje uporabniku urejanje srečanj lokalnih skupin.',
+            ]
+        ];
+    }
+    public function canView($member = null)
+    {
+        return Permission::check('EDIT_GROUPMEETING', 'any', $member);
     }
 
     public function canEdit($member = null)
     {
-        return Permission::check('CMS_ACCESS_CMSMain', 'any', $member);
+        return Permission::check('EDIT_GROUPMEETING', 'any', $member);
     }
-
+    
 }
