@@ -1,7 +1,7 @@
 <nav class="navbar" id="navbar" data-controller="mobile-menu">
 	<div class="logo">
 	  <a href="$AbsoluteBaseURL">
-		<img src="assets/logo-nav.png" alt="Na tvojo besedo logo">
+		<img src="assets/logo-nav.png" alt="Na tvojo Besedo">
 	  </a>
 	</div>
   
