@@ -355,6 +355,12 @@ tr:hover {
 .text-center {
   text-align: center;
 }
+.podcrtaj {
+  color: var(--red-dark)
+}
+.podcrtaj:hover {
+  text-decoration: underline;
+}
 .overlay p {
   color: white;
   font-size: 20px;
