@@ -1011,6 +1011,9 @@ form .p-textarea label {
 .tekst-block {
     padding: 20px 5px; /* Doda notranji razmik */
 }
+.zero-padding-top{
+  padding-top: 0px;
+}
     .onasTekst {
   padding: 10px 10px;
 }
