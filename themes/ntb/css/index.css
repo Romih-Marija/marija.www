@@ -358,6 +358,9 @@ tr:hover {
 .podcrtaj {
   color: var(--red-dark)
 }
+.zero-padding-top{
+  padding-top: 0px;
+}
 .podcrtaj:hover {
   text-decoration: underline;
 }
@@ -1034,10 +1037,6 @@ form .p-textarea label {
   }
   .podlaga2 p {
     font-size: 16px;
-  }
-  .lokalneskupine p,
-  h3 {
-    text-align: center;
   }
   .navbar {
     height: 60px;

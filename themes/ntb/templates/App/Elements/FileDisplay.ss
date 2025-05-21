@@ -1,5 +1,5 @@
 <% if $DownloadFile %>
-    <div class="tekst-block">
+    <div class="tekst-block zero-padding-top">
         <p>
             <% if $FileType %>$FileType<% else %>Prenesi datoteko<% end_if %>:
             <a class="podcrtaj" href="$DownloadFile.URL" target="_blank" rel="noopener">
