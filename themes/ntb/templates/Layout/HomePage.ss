@@ -19,13 +19,13 @@
         <div class="podlaga2">
             <p class="vec">
                 <a href="/dogodki/kateheza-za-mlade">
-                    <b>KATEHEZA - 100-TERNA RODOVITNOST</b>
+                    <b>KATEHEZA - DA BI (P)OSTALI SVETI</b>
                 </a>
             </p>
             <br />
             <b>Trubarjeva 80 </b>
             <br />
-            <b>22. maj, ob 20. uri </b>
+            <b>19. junij, ob 20. uri </b>
             <br />
 
             <p class="vecGumb">
