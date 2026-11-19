@@ -17,31 +17,13 @@
             $ElementalArea
         <% end_if %>
         <div class="podlaga2">
-            <p class="vec">
-                <a href="/dogodki/kateheza-za-mlade">
-                    <b>KATEHEZA - DA BI (P)OSTALI SVETI</b>
-                </a>
-            </p>
-            <br />
-            <b>Trubarjeva 80 </b>
-            <br />
-            <b>19. junij, ob 20. uri </b>
-            <br />
-
-            <p class="vecGumb">
-                <a href="/dogodki/kateheza-za-mlade">
-                    <b>VEČ</b>
-                </a>
-            </p>
-        </div>
-        <div class="podlaga2">
             <p>
                 Nagovore ob nedeljski Božji besedi lahko spremljate: <br /> <br />
                 <a
                 href="https://www.youtube.com/@natvojobesedo"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="tukaj"
+                class="tukaj!"
                 >
                 <b>
                     TUKAJ <i class="fa-brands fa-youtube"></i>
